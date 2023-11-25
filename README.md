@@ -50,3 +50,5 @@ images
 |_____data.yaml
 
 ```
+
+4. Define `logging`, `utils` and `exception handlers`
