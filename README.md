@@ -52,3 +52,16 @@ images
 ```
 
 4. Define `logging`, `utils` and `exception handlers`
+
+5. Run the notebook in google colab for testing purposes and download it to research directory
+```bash
+# Implementation of waste-detection using yolo5 in colab
+
+* clone YOLOv5 repository
+* install dependencies `requirements.txt`
+* download the dataset from google drive and unzip
+* Define Model Configuration and Architecture
+* Train Custom YOLOv5 Detector
+* Evaluate Custom YOLOv5 Detector Performance
+* Export Trained Weights for Future Inference
+```
