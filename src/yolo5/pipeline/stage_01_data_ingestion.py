@@ -1,7 +1,7 @@
-from src.yolo5.entity.config_entity import ConfigurationManager
-from src.yolo5.components.data_ingestion import DataIngestion
-from src.yolo5.exception import AppException
-from src.yolo5.logger import logging
+from yolo5.entity.config_entity import ConfigurationManager
+from yolo5.components.data_ingestion import DataIngestion
+from yolo5.exception import AppException
+from yolo5.logger import logging
 import sys
 
 

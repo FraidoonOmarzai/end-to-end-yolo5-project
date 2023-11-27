@@ -7,8 +7,8 @@ from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
 
-from src.yolo5.exception import AppException
-from src.yolo5.logger import logging
+from yolo5.exception import AppException
+from yolo5.logger import logging
 
 
 @ensure_annotations

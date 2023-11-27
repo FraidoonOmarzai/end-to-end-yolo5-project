@@ -1,0 +1,16 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python3 src/yolo5/pipeline/stage_01_data_ingestion.py
+    deps:
+    - path: config/config.yaml
+      md5: 1b6d6951150d46b5fd009cc3dbcebb33
+      size: 270
+    - path: src/yolo5/pipeline/stage_01_data_ingestion.py
+      md5: e0cfc53faeac8f2042906fc8df997742
+      size: 947
+    outs:
+    - path: artifacts/data_ingestion
+      md5: 40553192bfe3407853782324a9d8953e.dir
+      size: 80704406
+      nfiles: 2758

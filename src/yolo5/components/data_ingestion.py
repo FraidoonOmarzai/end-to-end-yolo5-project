@@ -1,6 +1,6 @@
-from src.yolo5.entity.config_entity import DataIngestionConfig
-from src.yolo5.logger import logging
-from src.yolo5.exception import AppException
+from yolo5.entity.config_entity import DataIngestionConfig
+from yolo5.logger import logging
+from yolo5.exception import AppException
 import gdown
 import sys
 import os

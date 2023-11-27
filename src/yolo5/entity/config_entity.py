@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from pathlib import Path
 
-from src.yolo5.constant import *
-from src.yolo5.logger import logging
-from src.yolo5.utils.main_utils import read_yaml, create_directories
+from yolo5.constant import *
+from yolo5.logger import logging
+from yolo5.utils.main_utils import read_yaml, create_directories
 
 
 @dataclass
