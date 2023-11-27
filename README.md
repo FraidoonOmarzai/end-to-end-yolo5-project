@@ -65,3 +65,21 @@ images
 * Evaluate Custom YOLOv5 Detector Performance
 * Export Trained Weights for Future Inference
 ```
+
+```bash
+### Workflows:
+1. Update config.yaml
+2. Update params.yaml
+3. Update the entity and configuration manager `yolo5/entity/config_entity.py`
+4. Update the components
+5. Update the pipeline 
+6. Update dvc.yaml
+```
+
+6. **Data Ingestion**
+* define config/config.yaml -> create 01_data_ingestion.ipynb
+* define config_entity.py -> create components/data_ingestion.py -> add pipeline and run dvc.yaml
+```bash
+dvc init
+dvc repro
+```

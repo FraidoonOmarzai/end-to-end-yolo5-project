@@ -5,5 +5,5 @@ setup(
     version='0.0.0',
     author='FraidoonJan',
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src")
+    packages=find_packages(where=".\src")
 )
