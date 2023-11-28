@@ -83,3 +83,8 @@ images
 dvc init
 dvc repro
 ```
+
+7. **Data validation**
+* check whether the files and directories are exist
+* define config/config.yaml -> create 02_data_validation.ipynb
+* define config_entity.py -> create components/data_validation.py -> add pipeline and run dvc.yaml

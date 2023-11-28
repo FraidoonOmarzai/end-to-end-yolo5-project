@@ -6,3 +6,10 @@ stages:
       - config/config.yaml
     outs:
       - artifacts/data_ingestion
+  data_validation:
+    cmd: python3 src/yolo5/pipeline/stage_02_data_validation.py
+    deps:
+      - src/yolo5/pipeline/stage_02_data_validation.py
+      - config/config.yaml
+    outs:
+      - artifacts/data_validation

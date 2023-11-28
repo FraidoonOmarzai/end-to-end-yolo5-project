@@ -14,6 +14,14 @@ class DataIngestionConfig:
     unzip_dir: Path
 
 
+@dataclass
+class DataValidationConfig:
+    root_dir: Path
+    data_path: Path
+    list_dir: list
+    status: str
+
+
 class ConfigurationManager:
     def __init__(self, config=CONFIG_PATH) -> None:
         self.config = read_yaml(config)
@@ -32,3 +40,15 @@ class ConfigurationManager:
             unzip_dir=config.unzip_dir
         )
         return data_ingestion_config
+
+    def get_data_validaton_config(self) -> DataValidationConfig:
+        config = self.config.data_validation
+        create_directories([config.root_dir])
+
+        data_validaton_config = DataValidationConfig(
+            root_dir=config.root_dir,
+            data_path=config.data_path,
+            list_dir=config.list_dir,
+            status=config.status
+        )
+        return data_validaton_config
