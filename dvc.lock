@@ -4,8 +4,8 @@ stages:
     cmd: python3 src/yolo5/pipeline/stage_01_data_ingestion.py
     deps:
     - path: config/config.yaml
-      md5: 1b6d6951150d46b5fd009cc3dbcebb33
-      size: 270
+      md5: f8052597c90d0f2ba30859d24ddb537f
+      size: 454
     - path: src/yolo5/pipeline/stage_01_data_ingestion.py
       md5: e0cfc53faeac8f2042906fc8df997742
       size: 947
@@ -14,3 +14,17 @@ stages:
       md5: 40553192bfe3407853782324a9d8953e.dir
       size: 80704406
       nfiles: 2758
+  data_validation:
+    cmd: python3 src/yolo5/pipeline/stage_02_data_validation.py
+    deps:
+    - path: config/config.yaml
+      md5: f8052597c90d0f2ba30859d24ddb537f
+      size: 454
+    - path: src/yolo5/pipeline/stage_02_data_validation.py
+      md5: 664e152c7c927b80b9acfb7aff283390
+      size: 909
+    outs:
+    - path: artifacts/data_validation
+      md5: 5785b6f04e21205bf65d81faed5f6313.dir
+      size: 16
+      nfiles: 1
