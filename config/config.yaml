@@ -11,3 +11,9 @@ data_validation:
   data_path: artifacts/data_ingestion
   list_dir: ['train', 'valid', 'data.zip']
   status: artifacts/data_validation/status.txt
+
+model_training:
+  root_dir: artifacts/model_taining
+  yolo5_rep_path: https://github.com/ultralytics/yolov5.git
+  defined_yaml_file: artifacts/data_ingestion/data.yaml
+  MODEL_TRAINER_PRETRAINED_WEIGHT_NAME: "yolov5s"
